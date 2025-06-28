@@ -8,9 +8,9 @@
 Если эти классы поменять в HTML, скрипт перестанет работать. Будьте аккуратны.
 */
 
-const likeHeartArray = document.querySelectorAll('.like-icon');
-const likeButtonArray = document.querySelectorAll('.card__like-button');
-const iconButtonArray = document.querySelectorAll('.card__icon-button');
+const likeHeartArray = document.querySelectorAll('.icon_like');
+const likeButtonArray = document.querySelectorAll('.card_like_button');
+const iconButtonArray = document.querySelectorAll('.card_heart_button');
 
 iconButtonArray.forEach((iconButton, index) => {
   iconButton.onclick = () =>
@@ -29,12 +29,12 @@ function toggleIsLiked(heart, button) {
 function setButtonText(heart, button) {
   if ([...heart.classList].includes('is-liked')) {
     setTimeout(
-      () => (button.querySelector('.button__text').textContent = 'Unlike'),
+      () => (button.querySelector('.button_text').textContent = 'Unlike'),
       500
     );
   } else {
     setTimeout(
-      () => (button.querySelector('.button__text').textContent = 'Like'),
+      () => (button.querySelector('.button_text').textContent = 'Like'),
       500
     );
   }
