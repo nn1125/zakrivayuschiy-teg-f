@@ -167,13 +167,10 @@
   padding: 15px 15px;
   width: 335px;
 }
-.button_text {
+.button_text,
+.button_icon {
   color: var(--color-button);
   mix-blend-mode: difference;
-}
-.button_icon {
-  position: relative;
-  z-index: 1;
 }
 .card_like_button {
   width: 130px;
