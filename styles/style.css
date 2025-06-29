@@ -38,6 +38,7 @@
   text-decoration: none;
   color: var(--color-text);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  outline: none;
 }
 .title_less {
   margin-top: 20px;
@@ -166,10 +167,13 @@
   padding: 15px 15px;
   width: 335px;
 }
-.button_text,
-.button_icon {
+.button_text {
   color: var(--color-button);
   mix-blend-mode: difference;
+}
+.button_icon {
+  position: relative;
+  z-index: 1;
 }
 .card_like_button {
   width: 130px;
